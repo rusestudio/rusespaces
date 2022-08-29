@@ -116,29 +116,30 @@ p{
   width: 200px;
   height: 200px;
   margin-bottom: 5px;
-  margin-left: 37px;
   border-radius: 6px;
 }
 
 .des{
   font-size: small;
+  text-align: left;
 }
 
 .des2{
   font-weight: bold;
-  text-align: center;
+  text-align: left;
+  
 }
 
 .vid1{
   width: 200px;
   height: 300px;
-  margin-left: 37px;
+  
 }
 
 .vid2{
   width: 150px;
   height: 250px;
-  margin-left: 37px;
+  
 }
 
 ul {
@@ -194,14 +195,35 @@ ul {
   color: aliceblue;
   text-align: center;
 }
+.alert {
+  padding: 20px;
+  background-color: #bd48f8;
+  color: white;
+  text-align: center;
+}
 
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
 
 
 </style>
 </head>
 
 <body>
-   
+
+
 <!-- Sidebar -->
 <div class="w3-sidebar w3-bar-block w3-border-right w3-black" style="display:none" id="mySidebar">
   <button onclick="w3_close()" class="w3-bar-item w3-large">
@@ -219,10 +241,15 @@ ul {
     <img class="star" src="img/photo_2022-07-21_01-46-09-removebg-preview.png"></button>
 </div>
 
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>Rotate!</strong> Use landscape rotation for better view in ipad/tablet device.
+</div>
+
 <h1 class="spaces">Spaces of Ruse</h1>
 <hr>
 
-<div class="container p-5 my-5">
+<div class="container p-5">
   <h1>Ruse Spaces</h1>
   <center><a href="#demo" class="btnc" data-bs-toggle="collapse">View More</a></center>
     <div id="demo" class="collapse">
@@ -386,7 +413,8 @@ ul {
             <source src="img/b2.MOV.mp4" type="video/mp4">
           </video>
           <video class="vid2" autoplay="autoplay" loop="loop" muted defaultMuted playsinline  oncontextmenu="return false;"  preload="auto"  id="myVideo" >
-            <source src="img/b3.MOV.mp4" type="video/mp4"></video>
+            <source src="img/b3.MOV.mp4" type="video/mp4">
+          </video>
           <p class="des">Boogi was my first love, child and true loving
           feeling i had.He was so adorable.We did many things togather
           We play, eat, sleep, watching drama,listening to bts concert.
